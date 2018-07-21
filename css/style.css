@@ -1,0 +1,58 @@
+*{margin:7px 4px;
+
+}
+
+body{
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+	width: 1140px
+	margin:0px auto;
+}
+.login-form{
+	width: 36%;
+    margin: 44px auto;
+    background-color: #fdfdfd;
+    padding: 18px;
+}
+
+.login-form img{
+	    width: 30%;
+    margin: 0 auto;
+    display: block;
+}
+.login-form h2{
+      text-align: center;
+}
+.login-form form{
+	padding: 0px
+}
+.login-form input{
+	    width: 70%;
+    margin: 8px 65px;
+    height: 35px;
+    padding: 0px 10px 0px;
+    font-size: 16px;
+}
+.login-btn{
+	    width: 150px !important;
+    margin: 8px 162px 1px !important;
+    background-color: #9a9696;
+    border: none;
+    border-radius: 35px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+}
+.login-btn:hover{
+	cursor: pointer;
+    background-color: #ada3a3;
+    box-shadow: 2px 0px 6px #4c4a4a;
+
+
+}
+
