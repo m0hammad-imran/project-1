@@ -1,58 +1,266 @@
-*{margin:7px 4px;
+*{
+	box-sizing: border-box;
 
 }
+
 
 body{
-	background: url(../img/bg.jpg) no-repeat;
-	background-size: cover;
-	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
 }
-
 .container{
-	width: 1140px
-	margin:0px auto;
+	width: 1140px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
-.login-form{
-	width: 36%;
-    margin: 44px auto;
-    background-color: #fdfdfd;
-    padding: 18px;
+.container:before,
+.container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.col25{
+	width: 33.33%;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+}
+.col50{
+	width: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	float: left;
+}
+.col100{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+}
+/*Common css*/
+.cat.Trips a{
+	background: #d90445;
+}
+.cat.tech a{
+	background: #000;
+}
+.cat.nature a{
+	background: #58b600;
+}
+.cat.fashion a{
+	background: #8200b2;
 }
 
-.login-form img{
-	    width: 30%;
-    margin: 0 auto;
-    display: block;
+.cat-img{
+	position: relative;
 }
-.login-form h2{
-      text-align: center;
+.date-author-common {
+	
+	bottom: 30px;
+	right:  0;
+	
 }
-.login-form form{
-	padding: 0px
+.date-author-common a{
+	color: #fff;
+    
+   
+    display: inline-block;
+    text-decoration: none;
 }
-.login-form input{
-	    width: 70%;
-    margin: 8px 65px;
-    height: 35px;
-    padding: 0px 10px 0px;
-    font-size: 16px;
+.date-author-common a:first-child{
+	color: #d0c4c4;
+	border-right: 2px solid #d0c4c4;
+	padding-right: 15px;
 }
-.login-btn{
-	    width: 150px !important;
-    margin: 8px 162px 1px !important;
-    background-color: #9a9696;
+.date-author-common a:last-child{
+	color: blue;
+	padding-left: 15px;
+}
+/*Common css end*/
+
+
+/*header area*/
+
+header{
+	background: #dcdcdc;
+
+}
+.logo{
+	display: inline-block;
+    background: blue;
+    padding-right: 35px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    position: relative;
+
+}
+.logo:before{
+	content: "";
+    position: absolute;
+    background: blue;
+    top: 0;
+    bottom: 0;
+    left: -10003px;
+    right: 100%;
+}
+.logo a{
+	color: #fff;
+	text-decoration: none;
+
+}
+.menu{
+	float: right;
+	background: #dcdcdc;
+
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+
+}
+.menu ul li{
+	list-style: none;
+	float: left;
+
+
+}
+.menu ul li a{
+	text-decoration: none;
+	padding:23px 13px;
+	display: block;
+	color: #000;
+
+
+}
+.menu ul li.active{
+	position: relative;
+}
+.menu ul li.active:after{
+	content: "";
+    position: absolute;
+    height: 3px;
+    background: blue;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+
+}
+/*Banner section*/
+
+.banner{
+	text-align: center;
+	background: url(../img/bg.jpg);
+	background-size: cover;
+	color: #fff;
+}
+.banner-in{
+	position: relative;
+	padding-top: 215px;
+	padding-bottom: 215px;
+}
+.cat{
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	
+}
+
+.cat a{
+	color: #fff;
+    background: blue;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.date-author {
+	position: absolute;
+	bottom: 30px;
+	right:  0;
+	
+}
+.date-author a{
+	color: #fff;
+    
+   
+    display: inline-block;
+    text-decoration: none;
+}
+.date-author a:first-child{
+	color: #fff;
+	border-right: 2px solid #fff;
+	padding-right: 15px;
+}
+.date-author a:last-child{
+	color: blue;
+	padding-left: 15px;
+}
+.Features{
+	width: 100%;
+	float: left;
+	padding: 25px;
+	background-color: #f6f6f6;
+}
+.cat-img img{
+	width: 100%;
+}
+.box{
+	padding: 40px;
+}
+.part2{
+	padding-bottom: 30px;
+}
+/* subscription section css*/
+.subscription{
+	background: url(../img/10.jpg);
+	text-align: center;
+	color: #fff;
+	padding: 100px 0;
+	float: left;
+	width: 100%;
+	
+}
+.sub-in input[type="text"]{
+	display: inline-block;
+	height: 48px;
+	width: 320px;
+	border-radius: 30px;
+	border: none;
+	padding-left: 20px;
+	padding-right: 100px;
+	background: #2c6cff;
+	color: #fff; 
+}
+.sub-in input[type="text"]:focus{
+	outline: none;
+
+}
+.sub-in{
+	position: relative;
+	display: inline-block;
+}
+.submit{
+	position: absolute;
+	top: 0;
+    right: 0
+}
+.submit input{
+	padding: 16px 25px;
     border: none;
-    border-radius: 35px;
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    -moz-transition: 0.4s;
+    border-radius: 30px;
 }
-.login-btn:hover{
-	cursor: pointer;
-    background-color: #ada3a3;
-    box-shadow: 2px 0px 6px #4c4a4a;
-
-
+.submit input:focus{
+	outline: none;
 }
-
+.footer {
+	color: #bbb6b6;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+	float: left;
+	width: 100%;
+}
